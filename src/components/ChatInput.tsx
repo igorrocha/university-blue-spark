@@ -35,7 +35,7 @@ const ChatInput = ({ onSendMessage, isLoading }: ChatInputProps) => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Ask about admissions, courses, campus life..."
+            placeholder="Pergunte sobre vestibular, cursos, vida no campus..."
             disabled={isLoading}
             className="border-gray-300 focus:border-university-blue focus:ring-university-blue/20 rounded-full py-3 px-4"
           />

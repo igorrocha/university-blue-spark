@@ -15,7 +15,7 @@ const ChatContainer = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hello! I'm your University AI Assistant. I can help you with information about admissions, courses, campus life, and much more. What would you like to know?",
+      text: "Olá! Eu sou o seu Assistente IA da Universidade. Posso ajudá-lo com informações sobre vestibular, cursos, vida no campus e muito mais. O que você gostaria de saber?",
       isUser: false,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
@@ -61,7 +61,7 @@ const ChatContainer = () => {
       
       const aiMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: data.response || "I'm sorry, I couldn't process your request right now. Please try again later.",
+        text: data.response || "Desculpe, não consegui processar sua solicitação agora. Tente novamente mais tarde.",
         isUser: false,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
@@ -73,7 +73,7 @@ const ChatContainer = () => {
       // Mock response for development
       const mockResponse: Message = {
         id: (Date.now() + 1).toString(),
-        text: "Thank you for your question! I'm currently being set up to help you with university information. Once the AI integration is complete, I'll be able to provide detailed answers about admissions, courses, campus facilities, student life, and much more. Please try again soon!",
+        text: "Obrigado pela sua pergunta! Estou sendo configurado para ajudá-lo com informações universitárias. Assim que a integração com IA estiver completa, poderei fornecer respostas detalhadas sobre vestibular, cursos, instalações do campus, vida estudantil e muito mais. Tente novamente em breve!",
         isUser: false,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
@@ -81,8 +81,8 @@ const ChatContainer = () => {
       setMessages(prev => [...prev, mockResponse]);
       
       toast({
-        title: "Development Mode",
-        description: "The AI backend is not yet connected. Showing mock response.",
+        title: "Modo de Desenvolvimento",
+        description: "O backend de IA ainda não está conectado. Mostrando resposta simulada.",
         variant: "default",
       });
     } finally {

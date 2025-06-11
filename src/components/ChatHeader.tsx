@@ -9,8 +9,8 @@ const ChatHeader = () => {
           <GraduationCap size={24} className="text-white" />
         </div>
         <div className="text-center">
-          <h1 className="text-xl font-bold">University AI Assistant</h1>
-          <p className="text-white/90 text-sm">Ask me anything about our university!</p>
+          <h1 className="text-xl font-bold">Assistente IA da Universidade</h1>
+          <p className="text-white/90 text-sm">Pergunte-me qualquer coisa sobre nossa universidade!</p>
         </div>
       </div>
     </div>
