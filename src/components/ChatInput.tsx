@@ -28,7 +28,7 @@ const ChatInput = ({ onSendMessage, isLoading }: ChatInputProps) => {
   };
 
   return (
-    <div className="bg-white border-t border-gray-200 p-4 shadow-lg">
+    <div className="bg-card border-t border-border p-4 shadow-lg">
       <form onSubmit={handleSubmit} className="flex space-x-2">
         <div className="flex-1">
           <Input
@@ -37,7 +37,7 @@ const ChatInput = ({ onSendMessage, isLoading }: ChatInputProps) => {
             onKeyPress={handleKeyPress}
             placeholder="Pergunte sobre vestibular, cursos, vida no campus..."
             disabled={isLoading}
-            className="border-gray-300 focus:border-university-blue focus:ring-university-blue/20 rounded-full py-3 px-4"
+            className="border-border focus:border-primary focus:ring-primary/20 rounded-full py-3 px-4"
           />
         </div>
         <Button
