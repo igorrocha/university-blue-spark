@@ -12,7 +12,7 @@ const ChatMessage = ({ message, isUser, timestamp }: ChatMessageProps) => {
         <div
           className={`px-4 py-3 rounded-2xl shadow-sm ${
             isUser
-              ? 'university-yellow-gradient text-white rounded-br-sm'
+              ? 'university-gradient text-white rounded-br-sm'
               : 'bg-white border border-gray-200 text-gray-800 rounded-bl-sm'
           }`}
         >
